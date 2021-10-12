@@ -5,7 +5,7 @@
     /*border: red solid 2px;*/
 }
 
-:root{
+:root {
     --color-primary: hsl(192, 37%, 48%);
     --color-primary-light: hsl(192, 90%, 77%);
     --color-secondary: hsl(268, 34%, 53%);
@@ -19,8 +19,7 @@ html {
 }
 
 .logo {
-    padding: 30px;
-    margin: 30px;
+    margin: 48px 0 64px 0;
     text-align: center;
 }
 
@@ -29,7 +28,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 375px;
     font-family: 'Red Hat Display', sans-serif;
     overflow-x: hidden;
 }
@@ -38,6 +36,11 @@ body {
     display: flex;
     flex-wrap: nowrap;
     margin-bottom: 30px;
+    background-image: url("./assets/tablet/image-hero.png");
+    height: 153px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 .image--people-left {
@@ -113,6 +116,7 @@ body {
     margin-bottom: 10px;
     font-weight: 500;
 }
+
 
 .button__text--blue {
     color: hsl(192, 90%, 70%);
@@ -203,3 +207,35 @@ footer {
     color: white;
     font-weight: 500;
 }
+
+@media only screen and (min-width: 768px) {
+    .image--heading {
+        height: 303px;
+    }
+
+    .text {
+        width: 457px;
+    }
+
+    .cta-buttons {
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+        justify-content: space-evenly;
+    }
+
+    .title--second {
+        font-size: 40px;
+        width: 55%;
+    }
+    .title--footer {
+        font-size: 40px;
+        width: 50%;
+    }
+
+    .footer--text {
+        width: 70%;
+    }
+
+}
+
